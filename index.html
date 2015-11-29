@@ -1,0 +1,93 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Don't be upsetti, have some spaghetti! </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Press+Start+2P' media="all">
+	<link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="resources/css/main.css" media="all">
+
+	<script type="text/javascript" src="resources/javascript/sparkle.js"></script>
+
+	<style type="text/css">
+
+	.full-width{
+		width: 100%;
+		float: left;
+		background: white !important;
+	}
+
+	.full-width-above-canvas{
+		width: 100%;
+		float: left;
+		position: absolute;
+		top: 0;
+		z-index: 999999999;
+	}
+
+	.full-width-top{
+		width: 100%;
+		background: white !important;
+		position: absolute;
+		z-index: 9999999999;
+	}
+
+	.full-canvas{
+		width: 100%;
+		float: left;
+	}
+
+	.full-canvas h1, .full-canvas h2{
+		padding-top: 70px;
+	}
+
+	.container{
+		margin: 0 auto;
+		width: 1000px;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	.leaderboard{
+		height: 90px;
+	}
+
+	.container-half{
+		float: left;
+		width: 500px;
+		text-align: center;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="full-canvas">
+
+		<img id="face-source" src="resources/images/spaghetti.png" width="477" height="196" alt=" " class="face-source">
+
+		<h1>Don't be upsetti, have some spaghetti!</h1>
+		<h2>Tenth Anniversary Edition</h2>
+
+		<div id="faces-container"></div>
+
+		<audio controls="controls" autoplay="autoplay">
+			<source src="resources/audio/waterfalls.ogg" type="audio/ogg" />
+			<source src="resources/audio/waterfalls.mp3" type="audio/mpeg" />
+		</audio>
+
+		<script type="text/javascript" src="resources/javascript/Three.js"></script>
+		<script type="text/javascript" src="resources/javascript/Faces.js"></script>
+		<script type="text/javascript">
+		window.onload = Faces.windowInit;
+		</script>
+
+	</div> <!-- "full-canvas" -->
+</body>
+</html>
